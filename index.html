@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Zulfiqar's Proposal Page for Bisma 💍</title>
+  <title>Zulfiqar's Love Page for Bisma 🖤</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -102,14 +102,6 @@
       animation-delay: 2s;
       text-align: center;
     }
-    
-    /* Proposal specific style - making it stand out */
-    .proposal {
-        font-size: 3.5rem; /* Larger font */
-        color: #8b0000; /* Darker red */
-        text-shadow: 3px 3px 10px gold; /* Gold shadow for ring sparkle */
-        line-height: 1.2;
-    }
 
     @keyframes finalReveal {
       0% {
@@ -163,7 +155,7 @@
   <div id="content">
     <div class="question" id="question"></div>
     <img src="" class="sticker hidden" id="sticker" />
-    <div class="final hidden proposal" id="final">Bisma Rehman, Will You Marry Me? 💍 - Your Zulfiqar 🖤</div>
+    <div class="final hidden" id="final">Zulfiqar 🖤 Loves Bisma Rehman!</div>
     <button id="nextBtn">Next</button>
   </div>
 
@@ -173,7 +165,7 @@
     "Do you like sweet surprises? 🎁",
     "Would you love endless cuddles? 🧸",
     "Dreaming of magical moments? ✨",
-    "Bisma, I have one last question... 💖"
+    "Get ready for Zulfiqar's Love! 🖤"
   ];
 
   const stickers = [
@@ -181,7 +173,7 @@
     "/2.png",
     "/3.png",
     "/4.png",
-    "/5.png" // This sticker will show up right before the final proposal message
+    "/5.png"
   ];
 
   let step = 0;
@@ -191,12 +183,6 @@
   const nextBtn = document.getElementById('nextBtn');
 
   function showStep() {
-    // Check if we are on the proposal step (last step before the final message)
-    if (step === questions.length - 1) {
-      // Remove the animation class to ensure the final transition is clean
-      questionEl.style.animation = 'none';
-    }
-    
     if (step < questions.length) {
       questionEl.textContent = questions[step];
       stickerEl.src = stickers[step];
@@ -225,6 +211,5 @@
     document.body.appendChild(heart);
   }
 </script>
-
 </body>
 </html>
